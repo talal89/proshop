@@ -1,0 +1,27 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:react": "npm start --prefix proshop-react",
+    "server": "nodemon backend/server",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "dev": "concurrently \"npm run server\" \"npm run start:react\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talal89/proshop.git"
+  },
+  "author": "talal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talal89/proshop/issues"
+  },
+  "homepage": "https://github.com/talal89/proshop#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
